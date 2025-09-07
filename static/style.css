@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #004B8D; /* COR PRIMÁRIA DA SUA EMPRESA */
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.gantt-section .chart-container {
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+.task-form form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.task-form input, .task-form select, .task-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.task-form button {
+    background-color: #004B8D; /* COR PRIMÁRIA DA SUA EMPRESA */
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #003a6e; /* TOM MAIS ESCURO DA COR PRIMÁRIA */
+}
+
+/* Tabela de Tarefas */
+.task-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-list th, .task-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-list th {
+    background-color: #f8f8f8;
+}
+
+.delete-btn {
+    color: #F44336;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Badges de Status */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.status-concluído { background-color: #4CAF50; }
+.status-em-andamento { background-color: #2196F3; }
+.status-atrasado { background-color: #F44336; }
+.status-não-iniciado { background-color: #9E9E9E; }
+
+/* Adicione este código ao final do seu style.css */
+
+.edit-btn {
+    color: #2196F3; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.edit-btn:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a página de edição */
+.edit-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-form-container label {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.save-btn, .cancel-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.save-btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #9E9E9E; /* Cinza */
+    color: white;
+}
